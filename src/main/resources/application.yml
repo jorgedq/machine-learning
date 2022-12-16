@@ -9,9 +9,9 @@ spring:
       mode: always
       platform: postgres
   datasource:
-    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:ml}
-    username: ${DB_USER:postgres}
-    password: ${DB_PASSWORD:postgres}
+    url: jdbc:postgresql://${PGHOST:localhost}:${PGPORT:5432}/${PGDATABASE:ml}
+    username: ${PGUSER:postgres}
+    password: ${PGPASSWORD:postgres}
   #    data: classpath:/scripts/database/data.sql
   jpa:
     show-sql: true

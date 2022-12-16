@@ -19,7 +19,7 @@ public class ChatController {
 
   @Autowired
   private ChatRepository chatRepository;
-  private ObjectMapper mapper = new ObjectMapper();
+  private final ObjectMapper mapper = new ObjectMapper();
 
   @GetMapping
   public ResponseEntity<List<ChatModel>> getAllChats() {
