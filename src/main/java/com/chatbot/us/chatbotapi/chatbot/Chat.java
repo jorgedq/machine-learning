@@ -32,7 +32,4 @@ public class Chat {
 
   @Column(columnDefinition = "TEXT")
   String answer;
-
-  @Enumerated(EnumType.ORDINAL)
-  ChatType type;
 }
