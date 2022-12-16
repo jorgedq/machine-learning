@@ -30,7 +30,7 @@ public class ChatController {
     List<Chat> chatList = chatRepository.findAll();
     List<List<String>> response = new ArrayList<>();
     chatList.forEach(chat -> {
-      response.add(List.of(chat.getQuestion(), chat.getAnswer(), chat.getType().name()));
+      response.add(List.of(chat.getQuestion(), chat.getAnswer()));
     });
     return ResponseEntity.ok(response);
   }
